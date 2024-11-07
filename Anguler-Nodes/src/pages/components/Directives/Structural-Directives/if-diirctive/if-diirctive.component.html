@@ -1,0 +1,24 @@
+<p>if-diirctive works!</p>
+
+<div *ngIf="isShow" class="">
+    <p>This will Show the elements</p>
+</div>
+
+<div class="" *ngIf="!isShow">
+    <p>This will hid elemments</p>
+</div>
+
+<hr>
+<br>
+
+<div class="" *ngIf="!isShow; else secondDiv">
+    <h2>Hello World</h2>
+</div>
+
+<ng-template #secondDiv>
+
+    <div class="">
+        <h2>dsjdlk</h2>
+    </div>
+
+</ng-template>

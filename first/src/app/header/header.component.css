@@ -1,0 +1,15 @@
+header {
+  width: 90vw;
+  padding: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  color: black;
+}

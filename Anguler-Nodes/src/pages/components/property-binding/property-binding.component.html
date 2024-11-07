@@ -1,0 +1,21 @@
+<p>property-binding works!</p>
+
+<div class="" style="margin: 3rem;">
+    <img [src]="path" height="300" width="450" alt="">
+    <br>
+    <br>
+    <p>String interpolation alway returns true if desabled has any value</p>
+    <input type="text" placeholder="StringInterpolation" disabled="{{isDisabled}}">
+
+    <br>
+    <br>
+
+    <p>Property binding</p>
+    <input type="text" [disabled]="isDisabled">
+</div>
+
+<form action="">
+    <input type="text" [value]="student.name">
+    <input type="email" [value]="student.email" class="m-2">
+    <input type="submit">
+</form>

@@ -1,0 +1,39 @@
+<p>for works!</p>
+<ol  >
+@for (item of items; track $index) {
+<li class="n1" [ngClass]="{
+        'odd': $odd,
+        'even': $even,
+        'first': $first,
+        'last': $last
+    }">
+    
+    {{item.name}}
+
+    <br>
+    <br>
+
+   Is Odd {{$odd}}
+
+   <br>
+   <br>
+
+   Is Even {{$even}}
+  
+   <br>
+   <br>
+
+  Index Is {{$index}}
+
+  <br>
+  <br>
+
+ Total Count Is {{$count}}
+
+
+</li>
+}@empty {
+<li>There is no items</li>
+}
+
+</ol>

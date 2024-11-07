@@ -1,0 +1,12 @@
+.main {
+    background-color: bisque;
+    width: 19rem;
+    height: 9rem;
+    margin: 3rem;
+    border: 1px solid gray;
+    font-weight: bold;
+}
+
+.sub {
+    padding: 1rem;
+}

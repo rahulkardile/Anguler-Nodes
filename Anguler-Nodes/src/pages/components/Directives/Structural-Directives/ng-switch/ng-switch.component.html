@@ -1,0 +1,11 @@
+<p>ng-switch works!</p>
+
+<div class="" [ngSwitch]="color" >
+    <p *ngSwitchCase="'red'" >This is Red</p>
+    <p *ngSwitchCase="'blue'" >This is blue</p>
+    <p *ngSwitchDefault >Wrong Color</p>
+</div>
+
+<div class="">
+    <input type="text" [(ngModel)]="color">
+</div>

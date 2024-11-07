@@ -1,0 +1,24 @@
+
+.n1{
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    width: 40vw;
+    margin: 10px;
+}
+
+.odd{
+    background: yellow;
+}
+
+.even{
+    background-color: green;
+}
+
+.first{
+    background-color: blueviolet;
+}
+
+.last{
+    background-color: chocolate;
+}

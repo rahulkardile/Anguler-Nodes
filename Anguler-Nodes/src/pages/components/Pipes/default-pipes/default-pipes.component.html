@@ -1,0 +1,95 @@
+<div style="margin: auto; text-align: center; padding: 1rem;" class="">
+
+    <h2>Pipes In Anguler</h2>
+
+    <table class="mt-3" [cellPadding]="10">
+        <thead>
+            <th>default Value's</th>
+            <th>With Pipe</th>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>{{institute}}</td>
+                <td>{{institute | uppercase}}</td>
+            </tr>
+
+            <tr>
+                <td>{{course}}</td>
+                <td>{{course | lowercase }}</td>
+            </tr>
+
+            <tr>
+                <td>{{str}}</td>
+                <td>{{str | titlecase}}</td>
+            </tr>
+
+            <tr>
+                <td>{{price}}</td>
+                <td>{{price | currency: 'INR'}}</td>
+            </tr>
+            <tr>
+                <td>{{price}}</td>
+                <td>{{price | currency: 'USD'}}</td>
+            </tr>
+            <tr>
+                <td>{{mark}}</td>
+                <td>{{mark | percent}}</td>
+            </tr>
+            <tr>
+                <td>{{date}}</td>
+                <td>{{date | date}}</td>
+            </tr>
+            <tr>
+                <td>{{date}}</td>
+                <td>{{date | date: "short"}}</td>
+            </tr>
+            <tr>
+                <td>{{date}}</td>
+                <td>{{date | date: "medium"}}</td>
+            </tr>
+
+            <tr>
+                <td>{{date}}</td>
+                <td>{{date | date: "long"}}</td>
+            </tr>
+
+            <tr>
+                <td>{{date}}</td>
+                <td>{{date | date: "dd/MM/YYYY"}}</td>
+            </tr>
+
+            <tr>
+                <td>{{person}}</td>
+                <td>{{person | json}}</td>
+            </tr>
+
+            <tr>
+                <td>{{PersonArr}}</td>
+                <td>{{PersonArr | json}}</td>
+            </tr>
+
+            <tr>
+                <td>{{floatValue}}</td>
+                <td>{{floatValue | number: '2.2-2'}}</td>
+            </tr>
+
+            <!-- pipe chaning -->
+            <!-- custome Pipes -->
+
+            <tr>
+                <td>{{floatValue}}</td>
+                <td>{{floatValue | number: '2.1-2' | percent}}</td>
+            </tr>
+
+            <tr>
+                <td>{{3}}</td>
+                <td>{{3 | power: 2 }}</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

@@ -1,0 +1,11 @@
+<p>if-else works!</p>
+
+@if (age < 18) { <h2>You Can Not Vote</h2>
+    }
+    @else if(age >= 18){
+    <h2>You Can Vote</h2>
+    }@else{
+    <h2>Invalid Age</h2>
+    }
+
+    <input type="text" [(ngModel)]="age">

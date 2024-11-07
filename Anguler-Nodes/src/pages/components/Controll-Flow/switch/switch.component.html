@@ -1,0 +1,28 @@
+<p>switch works!</p>
+
+@switch (color) {
+    @case ("red") {
+        <h2>We Have Red Color</h2>
+    }
+    @case ("blue") {
+        <h2>We Have blue Color</h2>
+    }
+    @case ("green") {
+        <h2>We Have green Color</h2>
+    }
+    @case ("yellow") {
+        <h2>We Have yellow Color</h2>
+    }
+    @case ("pink") {
+        <h2>We Have pink Color</h2>
+    }
+    @case ("gray") {
+        <h2>We Have gray Color</h2>
+    }
+    @default {
+        <h2>No Match Found</h2>
+    }
+}
+
+<input type="text" [(ngModel)]="color" >
+

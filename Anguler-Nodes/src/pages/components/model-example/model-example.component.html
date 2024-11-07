@@ -1,0 +1,38 @@
+<p>model-example works!</p>
+
+<h2>Using Interface</h2>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+    </thead>
+    @for(person of persons; track $index){
+    <tr>
+        <td>{{person.name}}</td>
+        <td>{{person.email}}</td>
+        <td>{{person.city}}</td>
+    </tr>
+    }@empty {
+    <p>Data is not Available</p>
+    }
+
+</table>
+
+<button (click)="getPersons()">Get Data</button>
+
+<br>
+<br>
+
+
+<form action="">
+
+    <input type="text" name="name" placeholder="name" [(ngModel)]="student.name">
+    <input type="text" name="email" placeholder="email" [(ngModel)]="student.email">
+    <input type="text" name="phoneNumber" placeholder="Phone Number" [(ngModel)]="student.phoneNumber">
+    <input type="text" name="password" placeholder="password" [(ngModel)]="student.password">
+
+</form>
+
+<button (click)="getStudent()">Get Student</button>

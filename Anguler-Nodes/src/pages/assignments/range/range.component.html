@@ -1,0 +1,7 @@
+<div class="main">
+    <div class="sub">
+        <p>Amount : </p>
+        <input type="range" #currentValue max="10000" [value]="value" (change)="changeValue(currentValue)" min="10">
+        <p>{{value | currency: 'INR'}}</p>
+    </div>
+</div>

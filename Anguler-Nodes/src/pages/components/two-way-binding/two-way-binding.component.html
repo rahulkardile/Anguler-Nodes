@@ -1,0 +1,11 @@
+<p>two-way-binding works!</p>
+
+<div class="m-3">
+    <input type="text" [value]="city" (keyup)="display($event)">
+    <p>City: {{city}}</p>
+</div>
+
+<div class="">
+    <input type="text" [(ngModel)]="mobile">
+    <p>Mobile: {{mobile}}</p>
+</div>

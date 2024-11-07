@@ -1,0 +1,19 @@
+<p>event-binding works!</p>
+<div class="">
+    <h3>Count is : {{count}}</h3>
+
+    <div class="">
+        <button (click)="increment()" class="me-3">increment</button>
+        <button (click)="decrement()">decrement</button>
+    </div>
+    <br>
+    <input type="text" (change)="display($event)">
+    <p>{{city}}</p>
+
+    <div class="m-6">
+        <input id="new" #phone type="text" [value]="phone1" (change)="displayPhone(phone)" >
+    </div>
+
+    <div class="">{{phone1}}</div>
+
+</div>

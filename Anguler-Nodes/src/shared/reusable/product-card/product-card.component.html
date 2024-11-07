@@ -1,0 +1,16 @@
+<div class="card" style="width: 30vw; border-radius: 14px; overflow: hidden;">
+    <div style="background-color: burlywood; display: flex; flex-direction: column; align-items: center;"
+        class="card-body">
+
+        <img style="width: 200px;" [src]="Product.img" alt="avatar">
+
+        <h2 style="font-size: 18px; margin: 0px 5px;">{{Product.name}}</h2>
+        <!-- <h2 style="font-size: 13px; margin: 10px 0px;">{{.position}}</h2> -->
+        <h4 style="font-size: 13px; text-align: center; font-weight: 400;">{{Product.description}}</h4>
+        <span>{{Product.price}}</span>
+        <div style="display: flex; gap: 10px;" class="">
+
+            <button (click)="deleteProduct.emit(Product.id)">Delete</button>
+        </div>
+    </div>
+</div>

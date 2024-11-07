@@ -1,0 +1,14 @@
+.custom{
+    background-color: blueviolet;
+    padding: 2rem;
+}
+
+.custom-2{
+    &:hover{
+        color: blue;
+    }
+}
+
+.class-1 {
+    color: red;
+}

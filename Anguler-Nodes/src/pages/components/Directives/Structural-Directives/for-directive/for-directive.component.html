@@ -1,0 +1,20 @@
+<p>for-directive works!</p>
+
+<table style="padding-top: 21px; margin: auto;">
+    <thead>
+        <th style="padding: 21px; background-color: cornflowerblue; border: 2px solid black;">Name</th>
+        <th style="padding: 21px; background-color: cornflowerblue; border: 2px solid black;">Age</th>
+        <th style="padding: 21px; background-color: cornflowerblue; border: 2px solid black;">City</th>
+    </thead>
+
+    <tbody>
+        <td *ngFor="let person of Persons" [ngStyle]="{
+         'background-color': getColor(person.city),
+        }">
+            <tr>{{person.name}}</tr>
+            <tr>{{person.age}}</tr>
+            <tr>{{person.city}}</tr>
+        </td>
+
+    </tbody>
+</table>

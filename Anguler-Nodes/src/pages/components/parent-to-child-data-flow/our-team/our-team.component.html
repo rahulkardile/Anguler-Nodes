@@ -1,0 +1,8 @@
+<p style="text-align: center; font-weight: 600; font-size: 24px; margin-top: 20px;">See Our Team</p>
+<div class=""
+    style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; justify-content: start; padding: 1rem;">
+    @for(team of ourTeam; track $index){
+    <app-team-info [teamMember]="team"></app-team-info>
+    }
+
+</div>
